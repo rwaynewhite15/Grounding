@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grounding - Rewire Your Brain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Grounding</h1>
+            <p class="subtitle">Rewire Your Brain Through Mindful Practice</p>
+        </header>
+
+        <main id="main-content">
+            <!-- Home Screen -->
+            <div id="home-screen" class="screen active">
+                <div class="welcome-section">
+                    <p class="intro-text">
+                        Welcome to Grounding, your companion for neuroplasticity-based mindfulness exercises. 
+                        These techniques help you stay present, reduce anxiety, and rewire your brain for better emotional regulation.
+                    </p>
+                </div>
+
+                <div class="exercises-grid">
+                    <div class="exercise-card" data-exercise="54321">
+                        <div class="exercise-icon">👁️</div>
+                        <h3>5-4-3-2-1 Technique</h3>
+                        <p>Use your five senses to ground yourself in the present moment</p>
+                        <button class="start-btn" onclick="startExercise('54321')">Start</button>
+                    </div>
+
+                    <div class="exercise-card" data-exercise="breathing">
+                        <div class="exercise-icon">🌬️</div>
+                        <h3>Box Breathing</h3>
+                        <p>Calm your nervous system with rhythmic breathing</p>
+                        <button class="start-btn" onclick="startExercise('breathing')">Start</button>
+                    </div>
+
+                    <div class="exercise-card" data-exercise="bodyscan">
+                        <div class="exercise-icon">🧘</div>
+                        <h3>Body Scan</h3>
+                        <p>Progressive awareness of physical sensations</p>
+                        <button class="start-btn" onclick="startExercise('bodyscan')">Start</button>
+                    </div>
+
+                    <div class="exercise-card" data-exercise="pmr">
+                        <div class="exercise-icon">💪</div>
+                        <h3>Progressive Muscle Relaxation</h3>
+                        <p>Release tension through systematic muscle relaxation</p>
+                        <button class="start-btn" onclick="startExercise('pmr')">Start</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5-4-3-2-1 Exercise Screen -->
+            <div id="exercise-54321" class="screen exercise-screen">
+                <button class="back-btn" onclick="goHome()">← Back</button>
+                <h2>5-4-3-2-1 Grounding Technique</h2>
+                <div class="exercise-content">
+                    <div class="instruction-box">
+                        <p id="instruction-text-54321" class="instruction-text"></p>
+                    </div>
+                    <div class="progress-indicator">
+                        <div id="progress-54321" class="progress-bar"></div>
+                    </div>
+                    <button id="next-54321" class="action-btn" onclick="next54321()">Next</button>
+                </div>
+            </div>
+
+            <!-- Breathing Exercise Screen -->
+            <div id="exercise-breathing" class="screen exercise-screen">
+                <button class="back-btn" onclick="goHome()">← Back</button>
+                <h2>Box Breathing</h2>
+                <div class="exercise-content">
+                    <div class="breathing-circle" id="breathing-circle">
+                        <div class="circle-inner">
+                            <p id="breathing-instruction">Get Ready</p>
+                        </div>
+                    </div>
+                    <div class="breathing-controls">
+                        <button id="start-breathing" class="action-btn" onclick="startBreathing()">Start</button>
+                        <button id="stop-breathing" class="action-btn secondary" onclick="stopBreathing()" style="display:none;">Stop</button>
+                    </div>
+                    <p class="breathing-info">Breathe in for 4 seconds, hold for 4, breathe out for 4, hold for 4</p>
+                </div>
+            </div>
+
+            <!-- Body Scan Exercise Screen -->
+            <div id="exercise-bodyscan" class="screen exercise-screen">
+                <button class="back-btn" onclick="goHome()">← Back</button>
+                <h2>Body Scan Meditation</h2>
+                <div class="exercise-content">
+                    <div class="instruction-box">
+                        <p id="bodyscan-instruction" class="instruction-text">Click Start to begin the body scan meditation</p>
+                    </div>
+                    <div class="body-diagram">
+                        <div id="body-highlight" class="body-part"></div>
+                    </div>
+                    <div class="progress-indicator">
+                        <div id="progress-bodyscan" class="progress-bar"></div>
+                    </div>
+                    <button id="start-bodyscan" class="action-btn" onclick="startBodyScan()">Start</button>
+                </div>
+            </div>
+
+            <!-- PMR Exercise Screen -->
+            <div id="exercise-pmr" class="screen exercise-screen">
+                <button class="back-btn" onclick="goHome()">← Back</button>
+                <h2>Progressive Muscle Relaxation</h2>
+                <div class="exercise-content">
+                    <div class="instruction-box">
+                        <p id="pmr-instruction" class="instruction-text">Click Start to begin progressive muscle relaxation</p>
+                    </div>
+                    <div class="progress-indicator">
+                        <div id="progress-pmr" class="progress-bar"></div>
+                    </div>
+                    <button id="start-pmr" class="action-btn" onclick="startPMR()">Start</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Based on neuroplasticity principles from "Rewire Your Brain"</p>
+            <p class="disclaimer">This app is for wellness purposes. Consult healthcare professionals for medical concerns.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
