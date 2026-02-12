@@ -101,6 +101,8 @@ The brain's ability to reorganize itself by forming new neural connections throu
 
 🌐 **[Try the app live on GitHub Pages](https://rwaynewhite15.github.io/Grounding/)**
 
+> **Note**: To enable GitHub Pages deployment, go to repository Settings → Pages → Source and select "GitHub Actions".
+
 ## Installation
 
 No installation required! You can either:
