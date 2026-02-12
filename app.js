@@ -154,7 +154,6 @@ const bodyScanSteps = [
 ];
 
 let bodyScanIndex = 0;
-let bodyScanInterval = null;
 
 function startBodyScan() {
     bodyScanIndex = 0;

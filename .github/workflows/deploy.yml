@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - copilot/create-grounding-app
   workflow_dispatch:
 
 permissions:
